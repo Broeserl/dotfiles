@@ -1,0 +1,6 @@
+## source aliases
+source ~/.aliases
+
+## command history tweaks
+export PROMPT_COMMAND='history -a; history -n;'
+export HISTSIZE=5000

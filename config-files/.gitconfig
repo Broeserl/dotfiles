@@ -1,0 +1,13 @@
+[user]
+	email = broeserl1@gmail.com
+	name = Johannes Juraske
+[cola]
+	spellcheck = false
+[diff]
+	tool = bc3
+[difftool "bc3"]
+	trustExitCode = true
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	trustExitCode = true
