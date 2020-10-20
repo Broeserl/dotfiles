@@ -16,13 +16,11 @@ termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
 defbce on
 
 # default windows
-screen -t Shell1  1
-screen -t Shell2  2
-screen -t Shell3  3 
-screen -t Shell4  4
+screen -t
+screen -t
+screen -t
+screen -t
 select 0
-bind c screen 1 # window numbering starts at 1 not 0
-bind 0 select 10
 
 # get rid of silly xoff stuff
 bind s split
