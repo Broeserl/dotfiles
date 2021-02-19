@@ -32,5 +32,6 @@ add_custom_config_to_bashrc() {
 
 install_dev_tools
 install_std_tools
+install_useful_tools
 copy_config_files
 add_custom_config_to_bashrc
