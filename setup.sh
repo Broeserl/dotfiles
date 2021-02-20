@@ -1,7 +1,6 @@
 #!/bin/bash
 
 DEST_DIR="/home/$USER/"
-RUNZSH=no
 
 install_dev_tools() {
   echo "###################################################################"
@@ -55,9 +54,9 @@ add_custom_config_to_bashrc() {
   echo "source ~/.jo_config" >> ~/.bashrc
 }
 
-#install_dev_tools
-#install_std_tools
-#install_useful_tools
+install_dev_tools
+install_std_tools
+install_useful_tools
 install_ohmyzsh
 copy_config_files
 add_custom_config_to_bashrc
