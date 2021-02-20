@@ -4,19 +4,19 @@ DEST_DIR="/home/$USER/"
 
 install_dev_tools() {
   echo "###################################################################"
-  echo "\nInstall development tools\n"
+  echo "Install development tools"
   sudo apt -y install git g++ gcc cmake python3.8-dev valgrind grep
   echo "###################################################################"
 }
 
 install_std_tools() {
-  echo "\nInstall standard tools\n"
+  echo "Install standard tools"
   sudo apt -y install curl wget vim screen net-tools htop dos2unix
   echo "###################################################################"
 }
 
 install_useful_tools() {
-  echo "\nInstall useful tools\n"
+  echo "Install useful tools"
   sudo apt -y install diodon filezilla flameshot gparted neofetch ser2net rclone virtualbox virtualbox-ext-pack virtualbox-dkms
   echo "###################################################################"
 }
@@ -36,10 +36,10 @@ install_fonts() {
 }
 
 install_ohmyzsh() {
-  echo "\nInstall zsh & oh_my_zsh\n"
+  echo "Install zsh & oh_my_zsh"
   sudo apt -y install zsh fzf python3-pip 
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-  sudo chsh -s /bin/zsh
+  chsh -s /usr/bin/zsh
   install_ohmyzsh_plugins
   install_fonts
   echo "###################################################################"
