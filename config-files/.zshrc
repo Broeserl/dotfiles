@@ -139,6 +139,8 @@ plugins=(
   screen
   systemd
   thefuck
+  fzf
+  z
   zsh-syntax-highlighting
   zsh_reload)
 
