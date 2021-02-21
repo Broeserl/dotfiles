@@ -37,7 +37,7 @@ install_fonts() {
 
 install_ohmyzsh() {
   echo "Install zsh & oh_my_zsh"
-  sudo apt -y install zsh fzf python3-pip 
+  sudo apt -y install zsh fzf python3-pip xclip 
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
   chsh -s /usr/bin/zsh
   install_ohmyzsh_plugins
