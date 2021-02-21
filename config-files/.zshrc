@@ -136,6 +136,7 @@ plugins=(
   copybuffer
   copydir
   copyfile
+  extract
   screen
   systemd
   thefuck
