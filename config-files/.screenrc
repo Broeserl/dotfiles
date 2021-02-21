@@ -5,15 +5,14 @@ hardstatus string '%{= kG}[%{G}%H%? %1`%?%{g}][%= %{= kw}%-w%{+b yk} %n*%t%?(%u)
 # huge scrollback buffer
 defscrollback 999999999
 
-# Enable mouse scrolling and scroll bar history scrolling
-termcapinfo xterm* ti@:te@
-
-# no welcome message
+# Turn off that annoying start up message
 startup_message off
-# 256 colors
-attrcolor b ".I"
-termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
-defbce on
+
+# Turn the even more annoying whole-screen-flash-on-tab-complete "feature"
+vbell off
+
+terminfo xterm-256color hs@:cs=\E[%i%p1%d;%p2%dr:im=\E[4h:ei=\E[4l
+term xterm-256color
 
 # default windows
 screen -t
