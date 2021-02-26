@@ -186,6 +186,10 @@ Plug 'valloric/youcompleteme'
 " File Tree, found here: https://vimawesome.com/plugin/nerdtree-red  
 Plug 'scrooloose/nerdtree'
 
+" Markdown plugins
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+
 " Make sure you use single quotes
 " Plug 'junegunn/seoul256.vim'
 " Plug 'junegunn/vim-easy-align'
