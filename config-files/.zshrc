@@ -153,3 +153,7 @@ alias fuck='fuck -y'
 
 # Sourcing my custom config
 source ~/.jo_config
+
+# Export locale settings
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
