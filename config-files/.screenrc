@@ -93,3 +93,5 @@ bind -c rsz -k kd eval "focus down"  "command -c rsz" # Down
 # split windows with F5 and F6
 bindkey "^[[15~" split -v	# F5 for spltiting screen vertically
 bindkey "^[[17~" split		# F6 for splitting screen horizontally
+defutf8 on
+utf8 on
