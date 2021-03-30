@@ -17,7 +17,7 @@ install_std_tools() {
 
 install_useful_tools() {
   echo "Install useful tools"
-  sudo apt -y install diodon filezilla flameshot gparted neofetch ser2net rclone virtualbox virtualbox-ext-pack virtualbox-dkms
+  sudo apt -y install diodon filezilla flameshot gparted neofetch ser2net tree rclone virtualbox virtualbox-ext-pack virtualbox-dkms
   echo "###################################################################"
 }
 
