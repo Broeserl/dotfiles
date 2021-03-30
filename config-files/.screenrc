@@ -13,6 +13,8 @@ vbell off
 
 terminfo xterm-256color hs@:cs=\E[%i%p1%d;%p2%dr:im=\E[4h:ei=\E[4l
 term xterm-256color
+# Enable mouse scrolling and scroll bar history scrolling
+termcapinfo xterm* ti@:te@
 
 # default windows
 screen -t
