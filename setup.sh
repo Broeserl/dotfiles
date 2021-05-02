@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEST_DIR="/home/$USER/"
+DEST_DIR="/root"
 
 install_dev_tools() {
   echo "###################################################################"
@@ -11,15 +11,14 @@ install_dev_tools() {
 
 install_std_tools() {
   echo "Install standard tools"
-  apt -y install curl wget vim screen net-tools htop dos2unix
+  apt -y install curl wget vim screen net-tools htop dos2unix unzip
   echo "###################################################################"
 }
 
 install_ohmyzsh_plugins() {
   git clone https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/custom/themes/powerlevel10k
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-  sudo pip3 install thefuck
-
+  pip3 install thefuck
 }
 
 install_fonts() {
@@ -32,7 +31,7 @@ install_fonts() {
 install_ohmyzsh() {
   echo "Install zsh & oh_my_zsh"
   apt -y install zsh fzf python3-pip xclip 
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+  sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1.1/zsh-in-docker.sh)"
   chsh -s /usr/bin/zsh
   install_ohmyzsh_plugins
   install_fonts
