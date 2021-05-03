@@ -16,12 +16,6 @@ alias .5='cd ../../../../..'
 ## auto adding arguments
 alias ping='ping -c 5'
 
-## execute as sudo standard
-alias reboot='sudo reboot'
-alias apt='sudo apt'
-alias apt-get='sudo apt'
-alias systemctl='sudo systemctl'
-
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
