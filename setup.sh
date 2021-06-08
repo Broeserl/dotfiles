@@ -40,7 +40,7 @@ install_ohmyzsh() {
 
 copy_config_files() {
   # copy config files to home dir of USER
-  cp -a ./config-files/. $DEST_DIR 
+  cp -a /dotfiles/config-files/. $DEST_DIR 
 }
 
 add_custom_config_to_bashrc() {
