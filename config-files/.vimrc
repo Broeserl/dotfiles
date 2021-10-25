@@ -123,8 +123,8 @@ set mouse=a
 " "press <Enter> to continue"
 set cmdheight=2
  
-" Display line numbers on the left
-set number
+" Display hybrid line numbers on the left
+set number relativenumber
  
 " Quickly time out on keycodes, but never time out on mappings
 set notimeout ttimeout ttimeoutlen=200
@@ -178,7 +178,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'octol/vim-cpp-enhanced-highlight'
 
 " GO Support, found here: https://vimawesome.com/plugin/vim-go-sparks-fly
-Plug 'fatih/vim-go'
+" Plug 'fatih/vim-go'
 
 " Autocomplete Engine, found here: https://vimawesome.com/plugin/youcompleteme
 Plug 'valloric/youcompleteme'
@@ -188,7 +188,7 @@ Plug 'scrooloose/nerdtree'
 
 " Markdown plugins
 Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
+" Plug 'plasticboy/vim-markdown'
 
 " Make sure you use single quotes
 " Plug 'junegunn/seoul256.vim'
