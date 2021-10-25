@@ -142,8 +142,7 @@ plugins=(
   thefuck
   fzf
   z
-  zsh-syntax-highlighting
-  zsh_reload)
+  zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
